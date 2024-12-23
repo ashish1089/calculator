@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    height: 100%;
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Calculator Styles */
+.calculator {
+    background: #000;
+    width: 100%;
+    padding: 1rem;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 431px) {
+    body {
+        align-items: center;
+        background: dimgray;
+    }
+
+    .calculator {
+        width: 370px;
+    }
+}
+
+/* Display Section */
+#display {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    pointer-events: none;
+    height: 6rem;
+    overflow: hidden;
+}
+
+#calculator-display {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    color: #fff;
+    transition: all ease-in-out;
+}
+
+.result {
+    color: gray;
+    font-size: 1.5rem;
+    text-align: right;
+    transition: all ease-in-out;
+}
+
+/* Buttons Section */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    border-top: 1px solid rgb(45, 44, 44);
+    padding-top: 1rem;
+    user-select: none;
+}
+
+button {
+    width: fit-content;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    box-shadow: none;
+}
+
+button:active,
+button:hover {
+    background: rgb(28, 27, 27);
+}
+
+button:active {
+    transform: scale(0.91);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Specific Button Styles */
+button.operator {
+    color: #ff9100;
+}
+
+button.zero {
+    grid-column-start: 2;
+}
+
+button.equal {
+    background: orange;
+}
+
+/* Icon Styles */
+i {
+    font-size: 1.4rem;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+.f-lg {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.f-sm {
+    font-size: 1.5rem;
+}
+
+.clicked {
+    background: rgb(28, 27, 27);
+    transform: scale(0.91);
+}

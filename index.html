@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/54f9b4b32d.js" crossorigin="anonymous"></script>
+  <link href="https://api.fontshare.com/v2/css?f[]=montserrat@400&display=swap" rel="stylesheet">
+
+  <script type="module" src="/src/main.js" defer></script>
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app" class="calculator">
+    <div id="display">
+      <div id="calculator-display" class="f-lg">0</div>
+      <div class="result hidden"></div>
+    </div>
+    <div class="buttons">
+      <button data-key="Escape" class="clear operator">
+        <i class="fa-solid fa-c"></i>
+      </button>
+      <button data-key="Backspace" class="delete operator">
+        <i class="fa-solid fa-delete-left"></i>
+      </button>
+      <button data-key="%" class="operator">
+        <i class="fa-solid fa-percent"></i>
+      </button>
+      <button data-key="/" class="operator">
+        <i class="fa-solid fa-divide"></i>
+      </button>
+      <button data-key="7">7</button>
+      <button data-key="8">8</button>
+      <button data-key="9">9</button>
+      <button data-key="*" class="operator">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <button data-key="4">4</button>
+      <button data-key="5">5</button>
+      <button data-key="6">6</button>
+      <button data-key="-" class="operator">
+        <i class="fa-solid fa-minus"></i>
+      </button>
+      <button data-key="1">1</button>
+      <button data-key="2">2</button>
+      <button data-key="3">3</button>
+      <!-- <button data-key="00" class="number 00">00</button> -->
+      <button data-key="+" class="operator">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <button data-key="0" class="zero">0</button>
+      <button data-key="." class="decimal">.</button>
+      </button>
+      <button data-key="Enter" class="equal">=</button>
+
+    </div>
+  </div>
+</body>
+
+</html>
